@@ -90,13 +90,13 @@ public class TicTacToeApp extends PApplet
         }
     }
 
-    private void flashyButtons(int x, int y)
+    private void flashyButtons(int x, int y) // this is just for fun, does exactly what it says, don't pay too much attention.
     {
         if((mouseX > grid[x][y].getX() && mouseX < grid[x][y].getX() + grid[x][y].getSizeX()) &&
                 (mouseY > grid[x][y].getY() && mouseY < grid[x][y].getY() + grid[x][y].getSizeY()))
             grid[x][y].gridColor = color(60,60,60);
         else
-            grid[x][y].gridColor = 0;// this is just for fun, does exactly what it says, don't pay too much attention.
+            grid[x][y].gridColor = 0;
     }
 
     public void checkWinner()
@@ -111,7 +111,7 @@ public class TicTacToeApp extends PApplet
                     (grid[0][0].getXON() == checkPlayer && grid[1][0].getXON() == checkPlayer && grid[2][0].getXON() == checkPlayer) || //left to right from top to bottom.
                     (grid[0][1].getXON() == checkPlayer && grid[1][1].getXON() == checkPlayer && grid[2][1].getXON() == checkPlayer) ||
                     (grid[0][2].getXON() == checkPlayer && grid[1][2].getXON() == checkPlayer && grid[2][2].getXON() == checkPlayer) ||
-                    (grid[0][0].getXON() == checkPlayer && grid[1][1].getXON() == checkPlayer && grid[2][2].getXON() == checkPlayer) || // diagonals right to left from top to bottom
+                    (grid[0][0].getXON() == checkPlayer && grid[1][1].getXON() == checkPlayer && grid[2][2].getXON() == checkPlayer) || // diagonals left to right from top to bottom
                     (grid[0][2].getXON() == checkPlayer && grid[1][1].getXON() == checkPlayer && grid[2][0].getXON() == checkPlayer))
             {
                 winScreen(checkPlayer);
