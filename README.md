@@ -1,7 +1,7 @@
 # TicTacToe
 TicTacToe Project with processing &amp; IntelliJ
 
-2 versions of this app, 1 is on IntelliJ and is the basic build with only the necessary code plus comments on how I made this and my thought process. (I have done this because I find the restrat on mousePressed complicated and wanted to better understand it for myself and others)
+2 versions of this app, 1 is on IntelliJ and is the basic build with only the necessary code plus comments on how I made this and my thought process. (I have done this because I find the restart on mouseReleased complicated and wanted to better understand it for myself and others)
 
 The other is a pure processing version, only open with the processing text editor, this is so we can make more files and organise 
 the code a lot easier than IntelliJ.
